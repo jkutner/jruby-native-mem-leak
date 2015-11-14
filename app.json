@@ -1,0 +1,7 @@
+{
+  "name": "jruby-mem-bug",
+  "image": "heroku/jruby",
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
