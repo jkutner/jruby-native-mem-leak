@@ -1,21 +1,13 @@
-# ruby-getting-started (Microsoft Windows)
+# JRuby native memory debugging example
 
-A barebones Rails app, which can easily be deployed to Heroku - on Microsoft Windows.
+This example can be used to reproduce JRuby native memory usage in a container.
 
-This application support the [Getting Started with Ruby on Heroku (Microsoft Windows)](https://devcenter.heroku.com/articles/getting-started-with-jruby) article - check it out.
+## Usage
 
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku master
-$ heroku run rake db:migrate
-$ heroku open
+```
+$ docker-compose run shell
+...
+root@c099c061635a:~/user# sh run.sh
 ```
 
-## Documentation
-
-For more information about using Ruby on Heroku, see these Dev Center articles:
-
-- [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
-
+Then watch the memory analysis roll in.
